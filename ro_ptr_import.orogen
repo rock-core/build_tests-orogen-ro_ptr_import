@@ -1,0 +1,13 @@
+name "ro_ptr_import"
+
+# If this project uses data types that are defined in other oroGen projects,
+# these projects should be imported there as well.
+import_types_from "std"
+
+import_types_from "base"
+
+task_context "Task" do
+    needs_configuration
+    output_port 'out', '/RTT/extras/ReadOnlyPointer</base/samples/frame/Frame>'
+end
+
